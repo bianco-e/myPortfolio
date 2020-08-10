@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Title from "./Title";
 import { projectsData } from "../data/webData";
 import ProjectDetail from "./ProjectDetail";
+import ScrollButton from "./ScrollButton";
 
 export default function Projects({ lang }) {
   const { title, projects } = projectsData;
@@ -17,15 +18,17 @@ export default function Projects({ lang }) {
           );
         })}
       </ProjectsWrapper>
+      <ScrollButton />
     </Container>
   );
 }
 
 const Container = styled.div({
-  padding: "20px",
+  alignItems: "center",
   display: "flex",
   flexDirection: "column",
-  alignItems: "center",
+  marginBottom: "140px",
+  padding: "20px",
 });
 const ProjectsWrapper = styled.section({
   alignItems: "center",

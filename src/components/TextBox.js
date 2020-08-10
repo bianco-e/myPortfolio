@@ -5,7 +5,7 @@ export default function TextBox({ content }) {
   return (
     <Container>
       {content.map((p) => (
-        <Text>{p}</Text>
+        <Text key={p}>{p}</Text>
       ))}
     </Container>
   );
@@ -14,8 +14,8 @@ export default function TextBox({ content }) {
 const Container = styled.section({
   backgroundColor: "#444",
   borderRadius: "2px",
-  padding: "20px",
-  width: "70%",
+  padding: "20px 35px",
+  width: "80%",
 });
 const Text = styled.p({
   color: "white",

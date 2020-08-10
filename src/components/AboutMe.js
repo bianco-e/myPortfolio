@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useRef } from "react";
 import styled from "styled-components";
 import Title from "./Title";
 import TextBox from "./TextBox";
 import TechsLogos from "./TechsLogos";
+import ScrollButton from "./ScrollButton";
 import { aboutMeData, techsLogos } from "../data/webData";
 
 export default function AboutMe({ lang }) {
@@ -13,6 +14,7 @@ export default function AboutMe({ lang }) {
       <Title content={title[lang]} />
       <TextBox content={text[lang]} />
       <TechsLogos logos={techsLogos} />
+      <ScrollButton />
     </Container>
   );
 }

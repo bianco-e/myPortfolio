@@ -1,8 +1,9 @@
-import React, { useContext } from "react";
+import React from "react";
 import styled from "styled-components";
+import ChooseLanguage from "./ChooseLanguage";
 import { navData } from "../data/webData";
 
-export default function Nav({ children, lang }) {
+export default function Nav({ lang, setLanguage }) {
   return (
     <Header>
       {navData.map((sectionData) => {
@@ -12,7 +13,7 @@ export default function Nav({ children, lang }) {
           </Link>
         );
       })}
-      {children}
+      <ChooseLanguage language={lang} setLanguage={setLanguage} />
     </Header>
   );
 }

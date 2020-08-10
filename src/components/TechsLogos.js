@@ -5,7 +5,7 @@ export default function TechsLogos({ logos }) {
   return (
     <LogosGroup>
       {logos.map((logo) => {
-        return <Logo src={logo} />;
+        return <Logo key={logo} src={logo} />;
       })}
     </LogosGroup>
   );

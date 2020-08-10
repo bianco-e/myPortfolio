@@ -13,6 +13,21 @@ import logoGmail from "../images/logoGmail.png";
 import logoLinkedin from "../images/logoLinkedin.png";
 import logoGithub from "../images/logoGithub.png";
 
+export const feedbackData = {
+  copied: {
+    es: "¡Copiado al portapapeles!",
+    en: "Copied to clipboard!",
+  },
+};
+
+export const nameData = {
+  name: "Bianco Emiliozzi",
+  job: {
+    es: "desarrollador javascript",
+    en: "javascript developer",
+  },
+};
+
 export const navData = [
   {
     es: "Quién soy",
@@ -35,13 +50,13 @@ export const aboutMeData = {
   },
   text: {
     es: [
-      "Me llamo Bianco",
+      "Me llamo Bianco y soy desarrollador javascript de Argentina. Hablo español (mi idioma nativo) e inglés con competencia profesional.",
       "Este último año estuve trabajando en proyectos de desarrollo web y capacitándome en el área con distintas tecnologías.",
       "Me metí en el mundo de la programación como auto-didacta, y de esa forma aprendí mucho. Unos meses después decidí empezar en un instituto.",
       "Busco insertarme en un entorno laboral donde pueda asumir desafíos y mejorar aún más mis habilidades.",
     ],
     en: [
-      "I'm Bianco",
+      "I'm Bianco and I'm an argentinian javascript developer. I speak spanish (my native language) and also english with professional working proficiency.",
       "This last year I've been working on web development projects and training myself using different technologies.",
       "I got in the programming world as a self-learner and I can say I learned a lot. A few months later I decided to start in an institute.",
       "Now I'm looking for new challenges, that's why I would like to find a nice work environment where I can learn and improve my skills even more.",
@@ -55,9 +70,17 @@ export const contactData = {
     en: "Contact",
   },
   channels: [
-    { icon: logoLinkedin, link: "https://www.linkedin.com/in/biancoemiliozzi" },
-    { icon: logoGithub, link: "https://github.com/bianco-e" },
-    { icon: logoGmail, link: "bianco.emiliozzi@gmail.com" },
+    {
+      icon: logoLinkedin,
+      link: "https://www.linkedin.com/in/biancoemiliozzi",
+      title: { es: "Perfil de Linkedin", en: "Linkedin profile" },
+    },
+    { icon: logoGmail, email: "bianco.emiliozzi@gmail.com" },
+    {
+      icon: logoGithub,
+      link: "https://github.com/bianco-e",
+      title: { es: "Perfil de Github", en: "Github profile" },
+    },
   ],
 };
 
@@ -88,22 +111,9 @@ export const projectsData = {
         en:
           "Help Social App. People can upload many things that they are looking for, or things they can donate and can be useful for someone else. Specially elements related to health care.",
       },
-      name: "Give a hand",
+      name: "Da1Mano",
       preview: helpSocialAppPvw,
       repo: "https://github.com/bianco-e/helpSocialApp",
-      techs: [JSLogo, ReactLogo, FirebaseLogo],
-    },
-    {
-      deploy: "https://consultorarar.com.ar/",
-      description: {
-        es:
-          "Página para empresa. Página web estática a pedido de una empresa, donde el administrador con su clave puede actualizar el contenido.",
-        en:
-          "Web page for a company. Static web page for a company, where admin can modify the content using a key.",
-      },
-      name: "Consultora RAR",
-      preview: consultoraRarPvw,
-      repo: "Privado",
       techs: [JSLogo, ReactLogo, FirebaseLogo],
     },
     {

@@ -1,13 +1,10 @@
-import React, { useContext } from "react";
+import React from "react";
 import styled from "styled-components";
-import Context from "../context/LanguageContext";
 import SpainFlag from "../images/spanish.png";
 import UKFlag from "../images/english.png";
 
-export default function ChooseLanguage() {
-  const { language, setLanguage } = useContext(Context);
-
-  const handleClick = () => {
+export default function ChooseLanguage({ language, setLanguage }) {
+  const switchLanguage = () => {
     language === "es" ? setLanguage("en") : setLanguage("es");
   };
 
@@ -24,7 +21,7 @@ export default function ChooseLanguage() {
 
   return (
     <Container>
-      <Button onClick={() => handleClick()}>
+      <Button onClick={() => switchLanguage()}>
         <Flag
           alt={langSwitch[language].title}
           src={langSwitch[language].flag}
