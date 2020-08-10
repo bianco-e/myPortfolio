@@ -32,14 +32,17 @@ export const navData = [
   {
     es: "Quién soy",
     en: "Who I am",
+    ref: "aboutmeRef",
   },
   {
     es: "Proyectos",
     en: "Projects",
+    ref: "projectsRef",
   },
   {
     es: "Contacto",
     en: "Contact",
+    ref: "contactRef",
   },
 ];
 
@@ -58,7 +61,7 @@ export const aboutMeData = {
     en: [
       "I'm Bianco and I'm an argentinian javascript developer. I speak spanish (my native language) and also english with professional working proficiency.",
       "This last year I've been working on web development projects and training myself using different technologies.",
-      "I got in the programming world as a self-learner and I can say I learned a lot. A few months later I decided to start in an institute.",
+      "I got in the programming world as self-taugth and I can say I learned a lot. A few months later I decided to start in an institute.",
       "Now I'm looking for new challenges, that's why I would like to find a nice work environment where I can learn and improve my skills even more.",
     ],
   },

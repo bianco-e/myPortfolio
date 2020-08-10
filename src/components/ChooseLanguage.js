@@ -3,7 +3,12 @@ import styled from "styled-components";
 import SpainFlag from "../images/spanish.png";
 import UKFlag from "../images/english.png";
 
-export default function ChooseLanguage({ language, setLanguage }) {
+export default function ChooseLanguage({
+  height,
+  language,
+  setLanguage,
+  width,
+}) {
   const switchLanguage = () => {
     language === "es" ? setLanguage("en") : setLanguage("es");
   };
@@ -24,8 +29,10 @@ export default function ChooseLanguage({ language, setLanguage }) {
       <Button onClick={() => switchLanguage()}>
         <Flag
           alt={langSwitch[language].title}
+          height={height}
           src={langSwitch[language].flag}
           title={langSwitch[language].title}
+          width={width}
         />
       </Button>
     </Container>
@@ -34,16 +41,16 @@ export default function ChooseLanguage({ language, setLanguage }) {
 
 const Container = styled.div({
   position: "absolute",
-  right: "3%",
+  right: "2%",
   top: "38%",
 });
 const Button = styled.button({
+  background: "none",
   border: "0",
   cursor: "pointer",
   padding: "0",
-  background: "none",
 });
 const Flag = styled.img({
-  width: "22px",
-  height: "22px",
+  height: (props) => props.height,
+  width: (props) => props.width,
 });

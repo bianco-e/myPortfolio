@@ -1,20 +1,25 @@
-import React, { useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import styled from "styled-components";
 import Title from "./Title";
 import { contactData, feedbackData } from "../data/webData";
 
-export default function Contact({ lang }) {
+export default function Contact({ lang, setContactRef }) {
   const { title, channels } = contactData;
   const { copied } = feedbackData;
   const [copyFeedback, setCopyFeedback] = useState(false);
   const [copyMessage, setCopyMessage] = useState(undefined);
+  var contactRef = useRef(null);
+
+  useEffect(() => {
+    setContactRef(contactRef);
+  }, [contactRef]);
 
   const copyText = (email) => {
     setCopyFeedback(!copyFeedback);
     navigator.clipboard.writeText(email).then(setCopyMessage(copied[lang]));
   };
   return (
-    <Container>
+    <Container ref={contactRef}>
       <Title content={title[lang]} />
       <ChannelsBox>
         {channels.map((channel) => {
@@ -51,7 +56,7 @@ export default function Contact({ lang }) {
   );
 }
 
-const Container = styled.div({
+const Container = styled.section({
   alignItems: "center",
   background: "#000",
   bottom: "0",

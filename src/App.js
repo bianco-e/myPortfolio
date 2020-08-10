@@ -10,18 +10,33 @@ import { nameData } from "./data/webData";
 export default function App() {
   const [language, setLanguage] = useState("es");
   const { name, job } = nameData;
+  const [aboutmeRef, setAboutmeRef] = useState(undefined);
+  const [projectsRef, setProjectsRef] = useState(undefined);
+  const [contactRef, setContactRef] = useState(undefined);
 
   return (
     <Wrapper>
-      <Nav lang={language} setLanguage={setLanguage} />
+      <Nav
+        lang={language}
+        setLanguage={setLanguage}
+        refs={{ aboutmeRef, projectsRef, contactRef }}
+      />
       <NameBox>
         <NameText>{name}</NameText>
         <JobText>{job[language]}</JobText>
-        <ScrollButton />
+        <ScrollButton refToScroll={aboutmeRef} />
       </NameBox>
-      <AboutMe lang={language} />
-      <Projects lang={language} />
-      <Contact lang={language} />
+      <AboutMe
+        lang={language}
+        refToScroll={projectsRef}
+        setAboutmeRef={setAboutmeRef}
+      />
+      <Projects
+        lang={language}
+        refToScroll={contactRef}
+        setProjectsRef={setProjectsRef}
+      />
+      <Contact lang={language} setContactRef={setContactRef} />
     </Wrapper>
   );
 }

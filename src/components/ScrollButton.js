@@ -2,9 +2,13 @@ import React from "react";
 import styled from "styled-components";
 import DownArrow from "./DownArrow";
 
-export default function ScrollButton() {
+export default function ScrollButton({ refToScroll }) {
+  const scrollToRef = () => {
+    window.scrollTo(0, refToScroll.current.offsetTop - 40);
+  };
+
   return (
-    <Button onClick={() => {}}>
+    <Button onClick={() => scrollToRef()}>
       <DownArrow width={100} />
     </Button>
   );

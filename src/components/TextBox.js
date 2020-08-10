@@ -1,13 +1,37 @@
-import React from "react";
+import React, { Fragment } from "react";
+import Media from "react-media";
 import styled from "styled-components";
 
-export default function TextBox({ content }) {
+export default function TextBox({ content, fSize, lHeight }) {
   return (
-    <Container>
-      {content.map((p) => (
-        <Text key={p}>{p}</Text>
-      ))}
-    </Container>
+    <>
+      <Media
+        queries={{
+          small: "(max-width: 599px)",
+          medium: "(min-width: 600px) and (max-width: 860px)",
+        }}
+      >
+        {(matches) => (
+          <Fragment>
+            <Container>
+              {content.map((p) => (
+                <Text
+                  key={p}
+                  fSize={
+                    matches.small ? "12px" : matches.medium ? "15px" : "18px"
+                  }
+                  lHeight={
+                    matches.small ? "20px" : matches.medium ? "22px" : "30px"
+                  }
+                >
+                  {p}
+                </Text>
+              ))}
+            </Container>
+          </Fragment>
+        )}
+      </Media>
+    </>
   );
 }
 
@@ -19,8 +43,8 @@ const Container = styled.section({
 });
 const Text = styled.p({
   color: "white",
-  fontSize: "18px",
-  lineHeight: "30px",
+  fontSize: (props) => props.fSize,
+  lineHeight: (props) => props.lHeight,
   margin: "0",
   textAlign: "center",
 });

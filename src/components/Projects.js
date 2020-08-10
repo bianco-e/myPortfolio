@@ -1,15 +1,20 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import styled from "styled-components";
 import Title from "./Title";
 import { projectsData } from "../data/webData";
 import ProjectDetail from "./ProjectDetail";
 import ScrollButton from "./ScrollButton";
 
-export default function Projects({ lang }) {
+export default function Projects({ lang, refToScroll, setProjectsRef }) {
   const { title, projects } = projectsData;
+  var projectsRef = useRef(null);
+
+  useEffect(() => {
+    setProjectsRef(projectsRef);
+  }, [projectsRef]);
 
   return (
-    <Container>
+    <Container ref={projectsRef}>
       <Title content={title[lang]} />
       <ProjectsWrapper>
         {projects.map((project) => {
@@ -18,12 +23,12 @@ export default function Projects({ lang }) {
           );
         })}
       </ProjectsWrapper>
-      <ScrollButton />
+      <ScrollButton refToScroll={refToScroll} />
     </Container>
   );
 }
 
-const Container = styled.div({
+const Container = styled.section({
   alignItems: "center",
   display: "flex",
   flexDirection: "column",

@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { Fragment, useState } from "react";
 import styled from "styled-components";
+import Media from "react-media";
 import TechsLogos from "./TechsLogos";
 import DownArrow from "./DownArrow";
 
@@ -8,24 +9,40 @@ export default function ProjectDetail({ project, lang }) {
   const [expand, setExpand] = useState(false);
 
   return (
-    <ProjectBox>
-      <ProjectLink href={deploy} target="blank">
-        <Preview src={preview} />
-        <Name>{name}</Name>
-      </ProjectLink>
-      <Description
-        height={!expand ? "50px" : undefined}
-        overflow={expand ? "visible" : "hidden"}
+    <>
+      <Media
+        queries={{
+          small: "(max-width: 599px)",
+          medium: "(min-width: 600px) and (max-width: 860px)",
+        }}
       >
-        {description[lang]}
-      </Description>
-      {description[lang].length > 130 && (
-        <ExpandButton onClick={() => setExpand(!expand)}>
-          {!expand ? <DownArrow width={15} /> : "-"}
-        </ExpandButton>
-      )}
-      <TechsLogos logos={techs} />
-    </ProjectBox>
+        {(matches) => (
+          <Fragment>
+            <ProjectBox
+              height={matches.small || matches.medium ? "300px" : "280px"}
+              width={matches.small ? "80%" : matches.medium ? "40%" : "18%"}
+            >
+              <ProjectLink href={deploy} target="blank">
+                <Preview src={preview} />
+                <Name>{name}</Name>
+              </ProjectLink>
+              <Description
+                height={!expand ? "50px" : undefined}
+                overflow={expand ? "visible" : "hidden"}
+              >
+                {description[lang]}
+              </Description>
+              {description[lang].length > 130 && (
+                <ExpandButton onClick={() => setExpand(!expand)}>
+                  {!expand ? <DownArrow width={15} /> : "-"}
+                </ExpandButton>
+              )}
+              <TechsLogos logos={techs} />
+            </ProjectBox>
+          </Fragment>
+        )}
+      </Media>
+    </>
   );
 }
 
@@ -35,9 +52,9 @@ const ProjectBox = styled.section({
   borderRadius: "10px",
   display: "flex",
   flexDirection: "column",
-  height: "280px",
+  height: (props) => props.height,
   padding: "0 60px",
-  width: "18%",
+  width: (props) => props.width,
 });
 const ProjectLink = styled.a({
   alignItems: "center",
@@ -50,7 +67,7 @@ const Name = styled.h4({
   margin: "10px",
   transition: "color .3s ease",
   ["&:hover"]: {
-    color: "#ccc",
+    color: "#888",
   },
 });
 const Preview = styled.img({
