@@ -3,9 +3,10 @@ import styled from "styled-components";
 import Media from "react-media";
 import TechsLogos from "./TechsLogos";
 import DownArrow from "./DownArrow";
+import SeeRepo from "./SeeRepo";
 
 export default function ProjectDetail({ project, lang }) {
-  const { deploy, description, name, preview, techs } = project;
+  const { deploy, description, name, preview, repo, techs } = project;
   const [expand, setExpand] = useState(false);
 
   return (
@@ -19,7 +20,7 @@ export default function ProjectDetail({ project, lang }) {
         {(matches) => (
           <Fragment>
             <ProjectBox
-              height={matches.small || matches.medium ? "300px" : "280px"}
+              height={matches.small || matches.medium ? "330px" : "320px"}
               width={matches.small ? "80%" : matches.medium ? "40%" : "18%"}
             >
               <ProjectLink href={deploy} target="blank">
@@ -27,7 +28,7 @@ export default function ProjectDetail({ project, lang }) {
                 <Name>{name}</Name>
               </ProjectLink>
               <Description
-                height={!expand ? "50px" : undefined}
+                height={!expand ? "47px" : undefined}
                 overflow={expand ? "visible" : "hidden"}
               >
                 {description[lang]}
@@ -37,6 +38,7 @@ export default function ProjectDetail({ project, lang }) {
                   {!expand ? <DownArrow width={15} /> : "-"}
                 </ExpandButton>
               )}
+              <SeeRepo lang={lang} repo={repo} />
               <TechsLogos logos={techs} />
             </ProjectBox>
           </Fragment>

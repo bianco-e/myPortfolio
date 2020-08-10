@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useParams, useState } from "react";
 import styled from "styled-components";
 import AboutMe from "./components/AboutMe";
 import Contact from "./components/Contact";
@@ -61,9 +61,8 @@ const NameText = styled.p({
   textShadow: "1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff",
 });
 const JobText = styled.i({
-  color: "#222",
+  color: "#fff",
   fontSize: "20px",
-  fontWeight: "600",
-  marginBottom: "30px",
-  textShadow: "1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff",
+  fontWeight: "700",
+  marginBottom: "35px",
 });

@@ -8,6 +8,7 @@ import FirebaseLogo from "../images/logoFirebase.png";
 import animalCardomPvw from "../images/animalCardomPvw.png";
 import consultoraRarPvw from "../images/consultoraRarPvw.png";
 import helpSocialAppPvw from "../images/helpSocialAppPvw.png";
+import portfolioPvw from "../images/portfolioPvw.png";
 
 import logoGmail from "../images/logoGmail.png";
 import logoLinkedin from "../images/logoLinkedin.png";
@@ -129,8 +130,21 @@ export const projectsData = {
       },
       name: "Consultora RAR",
       preview: consultoraRarPvw,
-      repo: "Privado",
+      repo: { es: "Repo privado", en: "Private repo" },
       techs: [JSLogo, ReactLogo, FirebaseLogo],
+    },
+    {
+      deploy: "https://biancoemiliozzi.vercel.app/",
+      description: {
+        es:
+          "Portfolio de presentación. Portfolio para presentar proyectos web desarrollados. ¿Querés saber qué es recursividad? ¡Hacé click en el nombre!",
+        en:
+          "Introduction portfolio. Portfolio to show someone else my developed web projects. Do you want to see what recursion is? Click on its name!",
+      },
+      name: "Portfolio",
+      preview: portfolioPvw,
+      repo: "https://github.com/bianco-e/myPortfolio",
+      techs: [JSLogo, ReactLogo],
     },
   ],
 };

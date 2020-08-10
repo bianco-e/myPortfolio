@@ -87,6 +87,7 @@ const ChannelsBox = styled.section({
   width: "100%",
 });
 const CopyFeedback = styled.p({
+  color: "#888",
   fontSize: "14px",
   margin: "0",
 });
