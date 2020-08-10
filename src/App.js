@@ -1,4 +1,4 @@
-import React, { useParams, useState } from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import AboutMe from "./components/AboutMe";
 import Contact from "./components/Contact";
