@@ -1,26 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useContext, useEffect, useState } from "react";
+import styled from "styled-components";
+import AboutMe from "./components/AboutMe";
+import ChooseLanguage from "./components/ChooseLanguage";
+import Contact from "./components/Contact";
+import Nav from "./components/Nav";
+import Projects from "./components/Projects";
+import Context from "./context/LanguageContext";
 
-function App() {
+export default function App() {
+  const { language } = useContext(Context);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Wrapper>
+      <Nav lang={language}>
+        <ChooseLanguage />
+      </Nav>
+      <AboutMe lang={language} />
+      <Projects lang={language} />
+      <Contact lang={language} />
+    </Wrapper>
   );
 }
 
-export default App;
+const Wrapper = styled.div({
+  alignItems: "center",
+  display: "flex",
+  flexDirection: "column",
+  position: "relative",
+  width: "100%",
+});
