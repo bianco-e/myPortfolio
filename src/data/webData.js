@@ -115,7 +115,7 @@ export const projectsData = {
         en:
           "Help Social App. People can upload many things that they are looking for, or things they can donate and can be useful for someone else. Specially elements related to health care.",
       },
-      name: "Da1Mano",
+      name: "NecesiDar",
       preview: helpSocialAppPvw,
       repo: "https://github.com/bianco-e/helpSocialApp",
       techs: [JSLogo, ReactLogo, FirebaseLogo],
