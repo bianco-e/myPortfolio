@@ -20,6 +20,7 @@ export default function Nav({ lang, refs, setLanguage }) {
         {(matches) => (
           <Fragment>
             <Header>
+              <Logo href="#">[BE]</Logo>
               {navData.map((sectionData) => {
                 return (
                   <Link
@@ -67,5 +68,17 @@ const Link = styled.a({
   ["&:hover"]: {
     textDecoration: "none",
     textShadow: "0 0 12px rgba(255, 255, 255, .7)",
+  },
+});
+const Logo = styled.a({
+  color: "white",
+  cursor: "pointer",
+  fontSize: (props) => props.fSize || "16px",
+  left: "2%",
+  top: "40%",
+  position: "absolute",
+  textDecoration: "none",
+  ["&:hover"]: {
+    textDecoration: "none",
   },
 });

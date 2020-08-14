@@ -8,8 +8,8 @@ import ScrollButton from "./components/ScrollButton";
 import { nameData } from "./data/webData";
 
 export default function App() {
-  const [language, setLanguage] = useState("es");
   const { name, job } = nameData;
+  const [language, setLanguage] = useState("es");
   const [aboutmeRef, setAboutmeRef] = useState(undefined);
   const [projectsRef, setProjectsRef] = useState(undefined);
   const [contactRef, setContactRef] = useState(undefined);
