@@ -108,6 +108,19 @@ export const projectsData = {
       techs: [JSLogo, ReactLogo],
     },
     {
+      deploy: "https://onlineshopping.vercel.app/",
+      description: {
+        es:
+          "EN CONSTRUCCIÓN... Página de tienda online, donde el cliente puede diseñar estilos y administrar sus productos y categorías desde el panel de administrador",
+        en:
+          "UNDER CONSTRUCTION... E-commerce web page, where client can design their own style and manage their products and categories from admin panel",
+      },
+      name: "Online Store",
+      preview: "https://i.gifer.com/1kbx.gif",
+      repo: "https://github.com/bianco-e/onlineStore",
+      techs: [JSLogo, ReactLogo, FirebaseLogo],
+    },
+    {
       deploy: "https://helpsocialapp.vercel.app/",
       description: {
         es:
