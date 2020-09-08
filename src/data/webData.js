@@ -9,6 +9,7 @@ import animalCardomPvw from "../images/animalCardomPvw.png";
 import consultoraRarPvw from "../images/consultoraRarPvw.png";
 import helpSocialAppPvw from "../images/helpSocialAppPvw.png";
 import portfolioPvw from "../images/portfolioPvw.png";
+import onlineShoppingPvw from "../images/onlineShoppingPvw.png";
 
 import logoGmail from "../images/logoGmail.png";
 import logoLinkedin from "../images/logoLinkedin.png";
@@ -111,12 +112,12 @@ export const projectsData = {
       deploy: "https://onlineshopping.vercel.app/",
       description: {
         es:
-          "EN CONSTRUCCIÓN... Página de tienda online, donde el cliente puede diseñar estilos y administrar sus productos y categorías desde el panel de administrador",
+          "Página de tienda online, donde el cliente puede diseñar estilos y administrar sus productos y categorías desde el panel de administrador",
         en:
-          "UNDER CONSTRUCTION... E-commerce web page, where client can design their own style and manage their products and categories from admin panel",
+          "E-commerce website, where client can set the page style, text and personal data, and also manage their products and categories from admin panel",
       },
       name: "Online Store",
-      preview: "https://i.gifer.com/1kbx.gif",
+      preview: onlineShoppingPvw,
       repo: "https://github.com/bianco-e/onlineStore",
       techs: [JSLogo, ReactLogo, FirebaseLogo],
     },
