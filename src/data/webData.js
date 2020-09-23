@@ -56,15 +56,15 @@ export const aboutMeData = {
   text: {
     es: [
       "Me llamo Bianco y soy desarrollador javascript de Argentina. Hablo español (mi idioma nativo) e inglés con competencia profesional.",
-      "Este último año estuve trabajando en proyectos de desarrollo web y capacitándome en el área con distintas tecnologías.",
-      "Me metí en el mundo de la programación como auto-didacta, y de esa forma aprendí mucho. Unos meses después decidí empezar en un instituto.",
-      "Busco insertarme en un entorno laboral donde pueda asumir desafíos y mejorar aún más mis habilidades.",
+      "Hace más de un año vengo trabajando en proyectos de desarrollo web y capacitándome en el área con distintas tecnologías.",
+      "Me metí en el mundo de la programación como auto-didacta, de esa forma aprendí mucho y todavía lo sigo haciendo. Unos meses después decidí empezar en un instituto.",
+      "Busco insertarme en un entorno laboral donde pueda asumir nuevos desafíos y mejorar aún más mis habilidades.",
     ],
     en: [
       "I'm Bianco and I'm an argentinian javascript developer. I speak spanish (my native language) and also english with professional working proficiency.",
-      "This last year I've been working on web development projects and training myself using different technologies.",
-      "I got in the programming world as self-taugth and I can say I learned a lot. A few months later I decided to start in an institute.",
-      "Now I'm looking for new challenges, that's why I would like to find a nice work environment where I can learn and improve my skills even more.",
+      "I am working on web development projects and training myself using different technologies for more than a year.",
+      "I got in the programming world as self-taugth, I learned a lot in this way and keep doing it. A few months later I decided to start in an institute.",
+      "Now I'm looking for new challenges, that's why I would like to find a nice work environment where I can challenge myself, learn and improve my skills even more.",
     ],
   },
 };
@@ -144,7 +144,7 @@ export const projectsData = {
       },
       name: "Consultora RAR",
       preview: consultoraRarPvw,
-      repo: { es: "Repo privado", en: "Private repo" },
+      repo: "Private",
       techs: [JSLogo, ReactLogo, FirebaseLogo],
     },
     {

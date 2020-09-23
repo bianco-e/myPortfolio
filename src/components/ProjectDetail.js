@@ -2,7 +2,7 @@ import React, { Fragment, useState } from "react";
 import styled from "styled-components";
 import Media from "react-media";
 import TechsLogos from "./TechsLogos";
-import DownArrow from "./DownArrow";
+import DownArrow from "../svg/DownArrow";
 import SeeRepo from "./SeeRepo";
 
 export default function ProjectDetail({ project, lang }) {
@@ -38,7 +38,7 @@ export default function ProjectDetail({ project, lang }) {
                   {!expand ? <DownArrow width={15} /> : "-"}
                 </ExpandButton>
               )}
-              <SeeRepo lang={lang} repo={repo} />
+              <SeeRepo repo={repo} />
               <TechsLogos logos={techs} />
             </ProjectBox>
           </Fragment>
@@ -73,8 +73,8 @@ const Name = styled.h4({
   },
 });
 const Preview = styled.img({
-  height: "60px",
-  width: "100px",
+  height: "70px",
+  width: "140px",
 });
 const Description = styled.p({
   color: "white",

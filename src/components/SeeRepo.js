@@ -1,16 +1,17 @@
 import React from "react";
 import styled from "styled-components";
-import GitHubSVG from "./GitHubSVG";
+import GitHubSVG from "../svg/GitHubSVG";
+import LockSvg from "../svg/LockSvg.js";
 
-export default function SeeRepo({ lang, repo }) {
+export default function SeeRepo({ repo }) {
   return (
     <>
-      {repo.en !== "Private repo" ? (
+      {repo != "Private" ? (
         <RepoLink href={repo} target="blank">
           <GitHubSVG />
         </RepoLink>
       ) : (
-        <Text>{repo[lang]}</Text>
+        <LockSvg />
       )}
     </>
   );

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import DownArrow from "./DownArrow";
+import DownArrow from "../svg/DownArrow";
 
 export default function ScrollButton({ refToScroll }) {
   const scrollToRef = () => {

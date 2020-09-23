@@ -9,7 +9,7 @@ import { nameData } from "./data/webData";
 
 export default function App() {
   const { name, job } = nameData;
-  const [language, setLanguage] = useState("es");
+  const [language, setLanguage] = useState("en");
   const [aboutmeRef, setAboutmeRef] = useState(undefined);
   const [projectsRef, setProjectsRef] = useState(undefined);
   const [contactRef, setContactRef] = useState(undefined);
