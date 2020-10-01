@@ -4,6 +4,7 @@ import JSLogo from "../images/logoJS.png";
 import ReactLogo from "../images/logoReact.png";
 import NodeLogo from "../images/logoNode.png";
 import FirebaseLogo from "../images/logoFirebase.png";
+import MongoLogo from "../images/logoMongo.png";
 
 import animalCardomPvw from "../images/animalCardomPvw.png";
 import consultoraRarPvw from "../images/consultoraRarPvw.png";
@@ -61,9 +62,9 @@ export const aboutMeData = {
       "Busco insertarme en un entorno laboral donde pueda asumir nuevos desafíos y mejorar aún más mis habilidades.",
     ],
     en: [
-      "I'm Bianco and I'm an argentinian javascript developer. I speak spanish (my native language) and also english with professional working proficiency.",
+      "My name is Bianco and I'm an argentinian javascript developer. I speak spanish (my native language) and also english with professional working proficiency.",
       "I am working on web development projects and training myself using different technologies for more than a year.",
-      "I got in the programming world as self-taugth, I learned a lot in this way and keep doing it. A few months later I decided to start in an institute.",
+      "I got in the programming world as self-taught, I learned a lot in this way and keep doing it. A few months later I decided to start in an academy.",
       "Now I'm looking for new challenges, that's why I would like to find a nice work environment where I can challenge myself, learn and improve my skills even more.",
     ],
   },
@@ -163,4 +164,11 @@ export const projectsData = {
   ],
 };
 
-export const techsLogos = [HTMLLogo, CSSLogo, JSLogo, ReactLogo, NodeLogo];
+export const techsLogos = [
+  HTMLLogo,
+  CSSLogo,
+  JSLogo,
+  ReactLogo,
+  NodeLogo,
+  MongoLogo,
+];
