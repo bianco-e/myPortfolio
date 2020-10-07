@@ -11,6 +11,7 @@ import consultoraRarPvw from "../images/consultoraRarPvw.png";
 import helpSocialAppPvw from "../images/helpSocialAppPvw.png";
 import portfolioPvw from "../images/portfolioPvw.png";
 import onlineShoppingPvw from "../images/onlineShoppingPvw.png";
+import queCocinoPvw from "../images/queCocinoPvw.png";
 
 import logoGmail from "../images/logoGmail.png";
 import logoLinkedin from "../images/logoLinkedin.png";
@@ -106,7 +107,7 @@ export const projectsData = {
       },
       name: "Animal Cardom",
       preview: animalCardomPvw,
-      repo: "https://github.com/bianco-e/animalCardom",
+      repos: ["https://github.com/bianco-e/animalCardom"],
       techs: [JSLogo, ReactLogo],
     },
     {
@@ -119,7 +120,7 @@ export const projectsData = {
       },
       name: "Online Store",
       preview: onlineShoppingPvw,
-      repo: "https://github.com/bianco-e/onlineStore",
+      repos: ["https://github.com/bianco-e/onlineStore"],
       techs: [JSLogo, ReactLogo, FirebaseLogo],
     },
     {
@@ -132,8 +133,24 @@ export const projectsData = {
       },
       name: "NecesiDar",
       preview: helpSocialAppPvw,
-      repo: "https://github.com/bianco-e/helpSocialApp",
+      repos: ["https://github.com/bianco-e/helpSocialApp"],
       techs: [JSLogo, ReactLogo, FirebaseLogo],
+    },
+    {
+      deploy: "https://quecocino.vercel.app/",
+      description: {
+        es:
+          "Aplicación para saber qué cocinar. Los usuarios pueden filtrar una receta según los ingredientes que tengan o no tengan, o pueden pedir una receta aleatoria",
+        en:
+          "App to know what to cook. Users can filter a recipe by their having and not having ingredients, or they can just ask for a random recipe.",
+      },
+      name: "¿Qué cocino?",
+      preview: queCocinoPvw,
+      repos: [
+        "https://github.com/bianco-e/que-cocino",
+        "https://github.com/bianco-e/que-cocino-api",
+      ],
+      techs: [JSLogo, ReactLogo, NodeLogo, MongoLogo],
     },
     {
       deploy: "https://consultorarar.com.ar/",
@@ -145,7 +162,7 @@ export const projectsData = {
       },
       name: "Consultora RAR",
       preview: consultoraRarPvw,
-      repo: "Private",
+      repos: ["Private"],
       techs: [JSLogo, ReactLogo, FirebaseLogo],
     },
     {
@@ -158,7 +175,7 @@ export const projectsData = {
       },
       name: "Portfolio",
       preview: portfolioPvw,
-      repo: "https://github.com/bianco-e/myPortfolio",
+      repos: ["https://github.com/bianco-e/myPortfolio"],
       techs: [JSLogo, ReactLogo],
     },
   ],

@@ -6,7 +6,7 @@ import DownArrow from "../svg/DownArrow";
 import SeeRepo from "./SeeRepo";
 
 export default function ProjectDetail({ project, lang }) {
-  const { deploy, description, name, preview, repo, techs } = project;
+  const { deploy, description, name, preview, repos, techs } = project;
   const [expand, setExpand] = useState(false);
 
   return (
@@ -38,7 +38,11 @@ export default function ProjectDetail({ project, lang }) {
                   {!expand ? <DownArrow width={15} /> : "-"}
                 </ExpandButton>
               )}
-              <SeeRepo repo={repo} />
+              <ReposContainer>
+                {repos.map((repo) => (
+                  <SeeRepo repo={repo} />
+                ))}
+              </ReposContainer>
               <TechsLogos logos={techs} />
             </ProjectBox>
           </Fragment>
@@ -71,6 +75,12 @@ const Name = styled.h4({
   ["&:hover"]: {
     color: "#888",
   },
+});
+const ReposContainer = styled.div({
+  alignItems: "center",
+  display: "flex",
+  justifyContent: "space-around",
+  width: "25%",
 });
 const Preview = styled.img({
   height: "70px",
