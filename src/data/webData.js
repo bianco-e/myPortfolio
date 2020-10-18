@@ -129,9 +129,9 @@ export const projectsData = {
       deploy: "https://petfinder-arg.vercel.app/",
       description: {
         es:
-          "Red social de ayuda. Los usuarios pueden subir cosas que necesiten o que pueden donar para alguien más. Especialmente objetos que respondan a una necesidad de cuidado de la salud.",
+          "Petfinder es una aplicación web donde podes publicar los datos de tu mascota perdida, o si encontraste una podes encontrar a la persona que la perdió",
         en:
-          "Help Social App. People can upload many things that they are looking for, or things they can donate and can be useful for someone else. Specially elements related to health care.",
+          "Petfinder is a web app where you can post your pet details in case it is lost or if you found one you can contact the person who lost it.",
       },
       name: "Petfinder",
       preview: petfinderPvw,
@@ -173,7 +173,7 @@ export const projectsData = {
         es:
           "Página para empresa. Página web estática a pedido de una empresa, donde el administrador con su clave puede actualizar el contenido.",
         en:
-          "Web page for a company. Static web page for a company, where admin can modify the content using a key.",
+          "Web page for a company. Static web page for a company, with sections where admin can modify the content accessing to an admin panel using a key.",
       },
       name: "Consultora RAR",
       preview: consultoraRarPvw,

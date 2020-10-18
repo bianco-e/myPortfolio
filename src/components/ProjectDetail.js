@@ -35,7 +35,7 @@ export default function ProjectDetail({ project, lang }) {
               </Description>
               {description[lang].length > 130 && (
                 <ExpandButton onClick={() => setExpand(!expand)}>
-                  {!expand ? <DownArrow width={15} /> : "-"}
+                  {!expand ? <DownArrow width={18} /> : "-"}
                 </ExpandButton>
               )}
               <ReposContainer>
