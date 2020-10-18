@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import SpainFlag from "../images/spanish.png";
-import UKFlag from "../images/english.png";
+import SpainFlag from "../images/spain-flag.png";
+import UKFlag from "../images/uk-flag.png";
 
 export default function ChooseLanguage({
   height,

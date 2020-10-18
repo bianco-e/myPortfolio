@@ -20,7 +20,6 @@ export default function Nav({ lang, refs, setLanguage }) {
         {(matches) => (
           <Fragment>
             <Header>
-              <Logo href="#">[BE]</Logo>
               {navData.map((sectionData) => {
                 return (
                   <Link
@@ -39,7 +38,7 @@ export default function Nav({ lang, refs, setLanguage }) {
                 height={matches.small ? "17px" : "22px"}
                 language={lang}
                 setLanguage={setLanguage}
-                width={matches.small ? "17px" : "22px"}
+                width={matches.small ? "19px" : "24px"}
               />
             </Header>
           </Fragment>

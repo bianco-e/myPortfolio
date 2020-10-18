@@ -5,7 +5,7 @@ import { projectsData } from "../data/webData";
 import ProjectDetail from "./ProjectDetail";
 import ScrollButton from "./ScrollButton";
 
-export default function Projects({ lang, refToScroll, setProjectsRef }) {
+export default function Projects({ lang, setProjectsRef }) {
   const { title, projects } = projectsData;
   var projectsRef = useRef(null);
 
@@ -23,7 +23,6 @@ export default function Projects({ lang, refToScroll, setProjectsRef }) {
           );
         })}
       </ProjectsWrapper>
-      <ScrollButton refToScroll={refToScroll} />
     </Container>
   );
 }

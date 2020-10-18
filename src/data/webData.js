@@ -3,6 +3,7 @@ import CSSLogo from "../images/logocss.png";
 import JSLogo from "../images/logoJS.png";
 import ReactLogo from "../images/logoReact.png";
 import NodeLogo from "../images/logoNode.png";
+import NextLogo from "../images/logoNext.png";
 import FirebaseLogo from "../images/logoFirebase.png";
 import MongoLogo from "../images/logoMongo.png";
 
@@ -12,6 +13,7 @@ import helpSocialAppPvw from "../images/helpSocialAppPvw.png";
 import portfolioPvw from "../images/portfolioPvw.png";
 import onlineShoppingPvw from "../images/onlineShoppingPvw.png";
 import queCocinoPvw from "../images/queCocinoPvw.png";
+import petfinderPvw from "../images/petfinderPvw.png";
 
 import logoGmail from "../images/logoGmail.png";
 import logoLinkedin from "../images/logoLinkedin.png";
@@ -108,7 +110,7 @@ export const projectsData = {
       name: "Animal Cardom",
       preview: animalCardomPvw,
       repos: ["https://github.com/bianco-e/animalCardom"],
-      techs: [JSLogo, ReactLogo],
+      techs: [ReactLogo],
     },
     {
       deploy: "https://onlineshopping.vercel.app/",
@@ -121,7 +123,20 @@ export const projectsData = {
       name: "Online Store",
       preview: onlineShoppingPvw,
       repos: ["https://github.com/bianco-e/onlineStore"],
-      techs: [JSLogo, ReactLogo, FirebaseLogo],
+      techs: [ReactLogo, FirebaseLogo],
+    },
+    {
+      deploy: "https://petfinder-arg.vercel.app/",
+      description: {
+        es:
+          "Red social de ayuda. Los usuarios pueden subir cosas que necesiten o que pueden donar para alguien más. Especialmente objetos que respondan a una necesidad de cuidado de la salud.",
+        en:
+          "Help Social App. People can upload many things that they are looking for, or things they can donate and can be useful for someone else. Specially elements related to health care.",
+      },
+      name: "Petfinder",
+      preview: petfinderPvw,
+      repos: ["https://github.com/bianco-e/petfinder"],
+      techs: [ReactLogo, NextLogo, MongoLogo],
     },
     {
       deploy: "https://helpsocialapp.vercel.app/",
@@ -134,7 +149,7 @@ export const projectsData = {
       name: "NecesiDar",
       preview: helpSocialAppPvw,
       repos: ["https://github.com/bianco-e/helpSocialApp"],
-      techs: [JSLogo, ReactLogo, FirebaseLogo],
+      techs: [ReactLogo, FirebaseLogo],
     },
     {
       deploy: "https://quecocino.vercel.app/",
@@ -150,7 +165,7 @@ export const projectsData = {
         "https://github.com/bianco-e/que-cocino",
         "https://github.com/bianco-e/que-cocino-api",
       ],
-      techs: [JSLogo, ReactLogo, NodeLogo, MongoLogo],
+      techs: [ReactLogo, NodeLogo, MongoLogo],
     },
     {
       deploy: "https://consultorarar.com.ar/",
@@ -163,7 +178,7 @@ export const projectsData = {
       name: "Consultora RAR",
       preview: consultoraRarPvw,
       repos: ["Private"],
-      techs: [JSLogo, ReactLogo, FirebaseLogo],
+      techs: [ReactLogo, FirebaseLogo],
     },
     {
       deploy: "https://biancoemiliozzi.vercel.app/",
@@ -176,7 +191,7 @@ export const projectsData = {
       name: "Portfolio",
       preview: portfolioPvw,
       repos: ["https://github.com/bianco-e/myPortfolio"],
-      techs: [JSLogo, ReactLogo],
+      techs: [ReactLogo],
     },
   ],
 };
@@ -186,6 +201,7 @@ export const techsLogos = [
   CSSLogo,
   JSLogo,
   ReactLogo,
+  NextLogo,
   NodeLogo,
   MongoLogo,
 ];
