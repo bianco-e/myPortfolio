@@ -2,13 +2,13 @@ import React, { Fragment } from "react";
 import Media from "react-media";
 import styled from "styled-components";
 
-export default function TextBox({ content, fSize, lHeight }) {
+export default function TextBox({ content }) {
   return (
     <>
       <Media
         queries={{
           small: "(max-width: 599px)",
-          medium: "(min-width: 600px) and (max-width: 860px)",
+          medium: "(min-width: 600px) and (max-width: 860px)"
         }}
       >
         {(matches) => (
@@ -36,15 +36,14 @@ export default function TextBox({ content, fSize, lHeight }) {
 }
 
 const Container = styled.section({
-  backgroundColor: "#444",
   borderRadius: "2px",
-  padding: "20px 35px",
-  width: "80%",
+  padding: "20px 0",
+  width: "90%",
+  textAlign: "center"
 });
 const Text = styled.p({
   color: "white",
   fontSize: (props) => props.fSize,
   lineHeight: (props) => props.lHeight,
-  margin: "0",
-  textAlign: "center",
+  margin: "0"
 });

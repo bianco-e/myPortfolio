@@ -12,10 +12,12 @@ export default function TechsLogos({ logos }) {
 }
 
 const LogosGroup = styled.section({
+  alignItems: "center",
   display: "flex",
+  justifyContent: "space-around",
+  width: "100%"
 });
 const Logo = styled.img({
   height: "20px",
-  margin: "10px 20px",
-  width: "20px",
+  width: "20px"
 });

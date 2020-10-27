@@ -46,23 +46,23 @@ const Wrapper = styled.div({
   display: "flex",
   flexDirection: "column",
   position: "relative",
-  width: "100%",
+  width: "100%"
 });
 const NameBox = styled.section({
   display: "flex",
   flexDirection: "column",
   padding: "90px 0",
-  textAlign: "center",
+  textAlign: "center"
 });
 const NameText = styled.p({
   color: "#222",
-  fontSize: "50px",
+  fontSize: "52px",
   fontWeight: "800",
-  textShadow: "1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff",
+  textShadow: "1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff"
 });
 const JobText = styled.i({
   color: "#fff",
-  fontSize: "20px",
+  fontSize: "22px",
   fontWeight: "700",
-  marginBottom: "35px",
+  marginBottom: "35px"
 });

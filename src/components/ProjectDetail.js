@@ -14,14 +14,14 @@ export default function ProjectDetail({ project, lang }) {
       <Media
         queries={{
           small: "(max-width: 599px)",
-          medium: "(min-width: 600px) and (max-width: 860px)",
+          medium: "(min-width: 600px) and (max-width: 860px)"
         }}
       >
         {(matches) => (
           <Fragment>
             <ProjectBox
-              height={matches.small || matches.medium ? "330px" : "320px"}
-              width={matches.small ? "80%" : matches.medium ? "40%" : "18%"}
+              height="330px"
+              width={matches.small ? "80%" : matches.medium ? "40%" : "19%"}
             >
               <ProjectLink href={deploy} target="blank">
                 <Preview src={preview} />
@@ -60,31 +60,31 @@ const ProjectBox = styled.section({
   flexDirection: "column",
   height: (props) => props.height,
   padding: "0 60px",
-  width: (props) => props.width,
+  width: (props) => props.width
 });
 const ProjectLink = styled.a({
   alignItems: "center",
   display: "flex",
   flexDirection: "column",
-  textDecoration: "none",
+  textDecoration: "none"
 });
 const Name = styled.h4({
   color: "whitesmoke",
   margin: "10px",
   transition: "color .3s ease",
   ["&:hover"]: {
-    color: "#888",
-  },
+    color: "#888"
+  }
 });
 const ReposContainer = styled.div({
   alignItems: "center",
   display: "flex",
   justifyContent: "space-around",
-  width: "25%",
+  width: "25%"
 });
 const Preview = styled.img({
   height: "70px",
-  width: "140px",
+  width: "140px"
 });
 const Description = styled.p({
   color: "white",
@@ -92,12 +92,12 @@ const Description = styled.p({
   height: (props) => props.height,
   margin: "0",
   overflow: (props) => props.overflow,
-  textAlign: "center",
+  textAlign: "center"
 });
 const ExpandButton = styled.button({
   background: "none",
   border: "0",
   color: "white",
   cursor: "pointer",
-  fontSize: "18px",
+  fontSize: "18px"
 });
