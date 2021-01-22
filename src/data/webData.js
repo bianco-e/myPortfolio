@@ -22,81 +22,79 @@ import logoGithub from "../images/logoGithub.png";
 export const feedbackData = {
   copied: {
     es: "¡Copiado al portapapeles!",
-    en: "Copied to clipboard!"
-  }
+    en: "Copied to clipboard!",
+  },
 };
 
 export const nameData = {
   name: "Bianco Emiliozzi",
   job: {
     es: "desarrollador javascript",
-    en: "javascript developer"
-  }
+    en: "javascript developer",
+  },
 };
 
 export const navData = [
   {
     es: "Quién soy",
     en: "Who I am",
-    ref: "aboutmeRef"
+    ref: "aboutmeRef",
   },
   {
     es: "Proyectos",
     en: "Projects",
-    ref: "projectsRef"
+    ref: "projectsRef",
   },
   {
     es: "Contacto",
     en: "Contact",
-    ref: "contactRef"
-  }
+    ref: "contactRef",
+  },
 ];
 
 export const aboutMeData = {
   title: {
     es: "Quién soy",
-    en: "Who I am"
+    en: "Who I am",
   },
   text: {
     es: [
       "Me llamo Bianco y soy desarrollador javascript de Argentina. Hablo español (mi idioma nativo) e inglés con competencia profesional.",
-      "Hace más de un año vengo trabajando en proyectos de desarrollo web y capacitándome en el área con distintas tecnologías.",
-      "Me metí en el mundo de la programación como auto-didacta, de esa forma aprendí mucho y todavía lo sigo haciendo. Unos meses después decidí empezar en un instituto.",
-      "Busco insertarme en un entorno laboral donde pueda asumir nuevos desafíos y mejorar aún más mis habilidades."
+      "Hace dos años vengo trabajando en proyectos de desarrollo web y capacitándome en el área con distintas tecnologías.",
+      "Me metí en el mundo de la programación como auto-didacta y hoy en día trabajo en una empresa como desarrollador React.",
     ],
     en: [
       "I'm Bianco, an argentinian javascript developer. I speak spanish (my native language) and english with professional working proficiency.",
-      "I am working on web development projects and training myself using different technologies for more than a year.",
-      "I got in the programming world as self-taught, and I learned a lot in this way and keep doing it but I decided to start in an academy.",
-      "Now I'm looking for new challenges, that's why I would like to find a nice work environment where I can challenge myself, learn and improve my skills even more."
-    ]
-  }
+      "I am working on web development projects and improving my skills using different technologies for two years.",
+      "I got in the programming world as self-taught, and I'm currently working for a company as React developer.",
+    ],
+  },
 };
 
 export const contactData = {
   title: {
     es: "Contacto",
-    en: "Contact"
+    en: "Contact",
   },
   channels: [
     {
       icon: logoLinkedin,
       link: "https://www.linkedin.com/in/biancoemiliozzi",
-      title: { es: "Perfil de Linkedin", en: "Linkedin profile" }
+      title: { es: "Perfil de Linkedin", en: "Linkedin profile" },
     },
     { icon: logoGmail, email: "bianco.emiliozzi@gmail.com" },
     {
       icon: logoGithub,
       link: "https://github.com/bianco-e",
-      title: { es: "Perfil de Github", en: "Github profile" }
-    }
-  ]
+      title: { es: "Perfil de Github", en: "Github profile" },
+    },
+  ],
 };
 
 export const projectsData = {
   title: {
     es: "Proyectos",
-    en: "Projects"
+    en: "Projects",
   },
   projects: [
     {
@@ -105,12 +103,12 @@ export const projectsData = {
         es:
           "Juego de cartas PvPC. Cada jugador recibe 5 animales y 3 plantas para aplicar a los animales. Al empezar toca un terreno aleatorio que puede beneficiar a ciertos animales. Cada animal tiene una habilidad, ataque y vida, y el objetivo es matar todas las cartas del oponente.",
         en:
-          "Card game PvPC. Each player gets five different animals cards, and three different plants to apply on them if wanted. Also a terrain will be randomly set at the very start. Each card has an ability, attack and life points. The objective is to kill all opponent's cards."
+          "Card game PvPC. Each player gets five different animals cards, and three different plants to apply on them if wanted. Also a terrain will be randomly set at the very start. Each card has an ability, attack and life points. The objective is to kill all opponent's cards.",
       },
       name: "Animal Cardom",
       preview: animalCardomPvw,
       repos: ["https://github.com/bianco-e/animalCardom"],
-      techs: [ReactLogo]
+      techs: [ReactLogo],
     },
     {
       deploy: "https://onlineshopping.vercel.app/",
@@ -118,12 +116,12 @@ export const projectsData = {
         es:
           "Página de tienda online, donde el cliente puede diseñar estilos y administrar sus productos y categorías desde el panel de administrador",
         en:
-          "E-commerce website, where client can set the page style, text and personal data, and also manage their products and categories from admin panel"
+          "E-commerce website, where client can set the page style, text and personal data, and also manage their products and categories from admin panel",
       },
       name: "Online Store",
       preview: onlineShoppingPvw,
       repos: ["https://github.com/bianco-e/onlineStore"],
-      techs: [ReactLogo, FirebaseLogo]
+      techs: [ReactLogo, FirebaseLogo],
     },
     {
       deploy: "https://petfinder-arg.vercel.app/",
@@ -131,12 +129,12 @@ export const projectsData = {
         es:
           "Petfinder es una aplicación web donde podes publicar los datos de tu mascota perdida, o si encontraste una podes encontrar a la persona que la perdió",
         en:
-          "Petfinder is a web app where you can post your pet details in case it is lost or if you found one you can contact the person who lost it."
+          "Petfinder is a web app where you can post your pet details in case it is lost or if you found one you can contact the person who lost it.",
       },
       name: "Petfinder",
       preview: petfinderPvw,
       repos: ["https://github.com/bianco-e/petfinder"],
-      techs: [ReactLogo, NextLogo, MongoLogo]
+      techs: [ReactLogo, NextLogo, MongoLogo],
     },
     {
       deploy: "https://helpsocialapp.vercel.app/",
@@ -144,12 +142,12 @@ export const projectsData = {
         es:
           "Red social de ayuda. Los usuarios pueden subir cosas que necesiten o que pueden donar para alguien más. Especialmente objetos que respondan a una necesidad de cuidado de la salud.",
         en:
-          "Help Social App. People can upload many things that they are looking for, or things they can donate and can be useful for someone else. Specially elements related to health care."
+          "Help Social App. People can upload many things that they are looking for, or things they can donate and can be useful for someone else. Specially elements related to health care.",
       },
       name: "NecesiDar",
       preview: helpSocialAppPvw,
       repos: ["https://github.com/bianco-e/helpSocialApp"],
-      techs: [ReactLogo, FirebaseLogo]
+      techs: [ReactLogo, FirebaseLogo],
     },
     {
       deploy: "https://quecocino.vercel.app/",
@@ -157,15 +155,15 @@ export const projectsData = {
         es:
           "Aplicación para saber qué cocinar. Los usuarios pueden filtrar una receta según los ingredientes que tengan o no tengan, o pueden pedir una receta aleatoria",
         en:
-          "App to know what to cook. Users can filter a recipe by their having and not having ingredients, or they can just ask for a random recipe."
+          "App to know what to cook. Users can filter a recipe by their having and not having ingredients, or they can just ask for a random recipe.",
       },
       name: "¿Qué cocino?",
       preview: queCocinoPvw,
       repos: [
         "https://github.com/bianco-e/que-cocino",
-        "https://github.com/bianco-e/que-cocino-api"
+        "https://github.com/bianco-e/que-cocino-api",
       ],
-      techs: [ReactLogo, NodeLogo, MongoLogo]
+      techs: [ReactLogo, NodeLogo, MongoLogo],
     },
     {
       deploy: "https://consultorarar.com.ar/",
@@ -173,12 +171,12 @@ export const projectsData = {
         es:
           "Página para empresa. Página web estática a pedido de una empresa, donde el administrador con su clave puede actualizar el contenido.",
         en:
-          "Web page for a company. Static web page for a company, with sections where admin can modify the content accessing to an admin panel using a key."
+          "Web page for a company. Static web page for a company, with sections where admin can modify the content accessing to an admin panel using a key.",
       },
       name: "Consultora RAR",
       preview: consultoraRarPvw,
       repos: ["Private"],
-      techs: [ReactLogo, FirebaseLogo]
+      techs: [ReactLogo, FirebaseLogo],
     },
     {
       deploy: "https://biancoemiliozzi.vercel.app/",
@@ -186,14 +184,14 @@ export const projectsData = {
         es:
           "Portfolio de presentación. Portfolio para presentar proyectos web desarrollados. ¿Querés saber qué es recursividad? ¡Hacé click en el nombre!",
         en:
-          "Introduction portfolio. Portfolio to show someone else my developed web projects. Do you want to see what recursion is? Click on its name!"
+          "Introduction portfolio. Portfolio to show someone else my developed web projects. Do you want to see what recursion is? Click on its name!",
       },
       name: "Portfolio",
       preview: portfolioPvw,
       repos: ["https://github.com/bianco-e/myPortfolio"],
-      techs: [ReactLogo]
-    }
-  ]
+      techs: [ReactLogo],
+    },
+  ],
 };
 
 export const techsLogos = [
@@ -203,5 +201,5 @@ export const techsLogos = [
   ReactLogo,
   NextLogo,
   NodeLogo,
-  MongoLogo
+  MongoLogo,
 ];
