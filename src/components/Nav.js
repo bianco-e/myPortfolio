@@ -69,15 +69,3 @@ const Link = styled.a({
     textShadow: "0 0 12px rgba(255, 255, 255, .7)",
   },
 });
-const Logo = styled.a({
-  color: "white",
-  cursor: "pointer",
-  fontSize: (props) => props.fSize || "16px",
-  left: "2%",
-  top: "40%",
-  position: "absolute",
-  textDecoration: "none",
-  ["&:hover"]: {
-    textDecoration: "none",
-  },
-});

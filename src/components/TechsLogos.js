@@ -15,9 +15,10 @@ const LogosGroup = styled.section({
   alignItems: "center",
   display: "flex",
   justifyContent: "space-around",
-  width: "100%"
+  margin: "10px 0",
+  width: "100%",
 });
 const Logo = styled.img({
   height: "20px",
-  width: "20px"
+  width: "20px",
 });

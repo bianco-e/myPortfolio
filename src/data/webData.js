@@ -1,6 +1,7 @@
 import HTMLLogo from "../images/logohtml.png";
 import CSSLogo from "../images/logocss.png";
 import JSLogo from "../images/logoJS.png";
+import TSLogo from "../images/logoTS.webp";
 import ReactLogo from "../images/logoReact.png";
 import NodeLogo from "../images/logoNode.png";
 import NextLogo from "../images/logoNext.png";
@@ -60,13 +61,11 @@ export const aboutMeData = {
   text: {
     es: [
       "Me llamo Bianco y soy desarrollador javascript de Argentina. Hablo español (mi idioma nativo) e inglés con competencia profesional.",
-      "Hace dos años vengo trabajando en proyectos de desarrollo web y capacitándome en el área con distintas tecnologías.",
-      "Me metí en el mundo de la programación como auto-didacta y hoy en día trabajo en una empresa como desarrollador React.",
+      "Me metí en el mundo de la programación como auto-didacta hace mas de dos años y hoy en día trabajo como desarrollador React y NextJS.",
     ],
     en: [
       "I'm Bianco, an argentinian javascript developer. I speak spanish (my native language) and english with professional working proficiency.",
-      "I am working on web development projects and improving my skills using different technologies for two years.",
-      "I got in the programming world as self-taught, and I'm currently working for a company as React developer.",
+      "I got in the programming world as self-taught more than two years ago, and I'm currently working for a company as a React and NextJS developer.",
     ],
   },
 };
@@ -107,8 +106,11 @@ export const projectsData = {
       },
       name: "Animal Cardom",
       preview: animalCardomPvw,
-      repos: ["https://github.com/bianco-e/animalCardom"],
-      techs: [ReactLogo],
+      repos: [
+        "https://github.com/bianco-e/animal-cardom-front",
+        "https://github.com/bianco-e/animal-cardom-back",
+      ],
+      techs: [TSLogo, ReactLogo, NodeLogo, MongoLogo],
     },
     {
       deploy: "https://onlineshopping.vercel.app/",
@@ -198,6 +200,7 @@ export const techsLogos = [
   HTMLLogo,
   CSSLogo,
   JSLogo,
+  TSLogo,
   ReactLogo,
   NextLogo,
   NodeLogo,

@@ -12,7 +12,7 @@ export default function Contact({ lang, setContactRef }) {
 
   useEffect(() => {
     setContactRef(contactRef);
-  }, [contactRef]);
+  }, [contactRef]); //eslint-disable-line
 
   const copyText = (email) => {
     setCopyFeedback(!copyFeedback);

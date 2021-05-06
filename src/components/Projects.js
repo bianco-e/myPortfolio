@@ -3,7 +3,6 @@ import styled from "styled-components";
 import Title from "./Title";
 import { projectsData } from "../data/webData";
 import ProjectDetail from "./ProjectDetail";
-import ScrollButton from "./ScrollButton";
 
 export default function Projects({ lang, setProjectsRef }) {
   const { title, projects } = projectsData;
@@ -11,7 +10,7 @@ export default function Projects({ lang, setProjectsRef }) {
 
   useEffect(() => {
     setProjectsRef(projectsRef);
-  }, [projectsRef]);
+  }, [projectsRef]); //eslint-disable-line
 
   return (
     <Container ref={projectsRef}>

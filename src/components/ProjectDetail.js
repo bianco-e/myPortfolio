@@ -14,7 +14,7 @@ export default function ProjectDetail({ project, lang }) {
       <Media
         queries={{
           small: "(max-width: 599px)",
-          medium: "(min-width: 600px) and (max-width: 860px)"
+          medium: "(min-width: 600px) and (max-width: 860px)",
         }}
       >
         {(matches) => (
@@ -33,9 +33,12 @@ export default function ProjectDetail({ project, lang }) {
               >
                 {description[lang]}
               </Description>
-              {description[lang].length > 130 && (
-                <ExpandButton onClick={() => setExpand(!expand)}>
-                  {!expand ? <DownArrow width={18} /> : "-"}
+              {description[lang].length > 90 && (
+                <ExpandButton
+                  rotation={expand ? "180" : "0"}
+                  onClick={() => setExpand(!expand)}
+                >
+                  <DownArrow width={18} />
                 </ExpandButton>
               )}
               <ReposContainer>
@@ -60,31 +63,35 @@ const ProjectBox = styled.section({
   flexDirection: "column",
   height: (props) => props.height,
   padding: "0 60px",
-  width: (props) => props.width
+  transition: "all 0.4s ease",
+  width: (props) => props.width,
+  ["&:hover"]: {
+    transform: "scale(1.03)",
+  },
 });
 const ProjectLink = styled.a({
   alignItems: "center",
   display: "flex",
   flexDirection: "column",
-  textDecoration: "none"
+  textDecoration: "none",
 });
 const Name = styled.h4({
   color: "whitesmoke",
   margin: "10px",
   transition: "color .3s ease",
   ["&:hover"]: {
-    color: "#888"
-  }
+    color: "#888",
+  },
 });
 const ReposContainer = styled.div({
   alignItems: "center",
   display: "flex",
   justifyContent: "space-around",
-  width: "25%"
+  width: "25%",
 });
 const Preview = styled.img({
   height: "70px",
-  width: "140px"
+  width: "140px",
 });
 const Description = styled.p({
   color: "white",
@@ -92,12 +99,14 @@ const Description = styled.p({
   height: (props) => props.height,
   margin: "0",
   overflow: (props) => props.overflow,
-  textAlign: "center"
+  textAlign: "center",
 });
 const ExpandButton = styled.button({
   background: "none",
   border: "0",
   color: "white",
   cursor: "pointer",
-  fontSize: "18px"
+  fontSize: "18px",
+  transform: (props) => `rotate(${props.rotation}deg)`,
+  transition: "all 0.3s ease",
 });

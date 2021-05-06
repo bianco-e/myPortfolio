@@ -12,7 +12,7 @@ export default function AboutMe({ lang, refToScroll, setAboutmeRef }) {
 
   useEffect(() => {
     setAboutmeRef(aboutmeRef);
-  }, [aboutmeRef]);
+  }, [aboutmeRef]); //eslint-disable-line
 
   return (
     <Container ref={aboutmeRef}>
