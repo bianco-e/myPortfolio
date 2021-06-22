@@ -9,11 +9,11 @@ import FirebaseLogo from "../images/logoFirebase.png";
 import MongoLogo from "../images/logoMongo.png";
 
 import animalCardomPvw from "../images/animalCardomPvw.png";
-import consultoraRarPvw from "../images/consultoraRarPvw.png";
+//import consultoraRarPvw from "../images/consultoraRarPvw.png";
 import helpSocialAppPvw from "../images/helpSocialAppPvw.png";
 import portfolioPvw from "../images/portfolioPvw.png";
 import onlineShoppingPvw from "../images/onlineShoppingPvw.png";
-import queCocinoPvw from "../images/queCocinoPvw.png";
+//import queCocinoPvw from "../images/queCocinoPvw.png";
 import petfinderPvw from "../images/petfinderPvw.png";
 
 import logoGmail from "../images/logoGmail.png";
@@ -97,7 +97,7 @@ export const projectsData = {
   },
   projects: [
     {
-      deploy: "https://animalcardom.vercel.app",
+      deploy: "https://animalcardom.vercel.app?utm_source=portfolio&utm_medium=projects",
       description: {
         es:
           "Juego de cartas PvPC. Cada jugador recibe 5 animales y 3 plantas para aplicar a los animales. Al empezar toca un terreno aleatorio que puede beneficiar a ciertos animales. Cada animal tiene una habilidad, ataque y vida, y el objetivo es matar todas las cartas del oponente.",
@@ -149,35 +149,6 @@ export const projectsData = {
       name: "NecesiDar",
       preview: helpSocialAppPvw,
       repos: ["https://github.com/bianco-e/helpSocialApp"],
-      techs: [ReactLogo, FirebaseLogo],
-    },
-    {
-      deploy: "https://quecocino.vercel.app/",
-      description: {
-        es:
-          "Aplicación para saber qué cocinar. Los usuarios pueden filtrar una receta según los ingredientes que tengan o no tengan, o pueden pedir una receta aleatoria",
-        en:
-          "App to know what to cook. Users can filter a recipe by their having and not having ingredients, or they can just ask for a random recipe.",
-      },
-      name: "¿Qué cocino?",
-      preview: queCocinoPvw,
-      repos: [
-        "https://github.com/bianco-e/que-cocino",
-        "https://github.com/bianco-e/que-cocino-api",
-      ],
-      techs: [ReactLogo, NodeLogo, MongoLogo],
-    },
-    {
-      deploy: "https://consultorarar.com.ar/",
-      description: {
-        es:
-          "Página para empresa. Página web estática a pedido de una empresa, donde el administrador con su clave puede actualizar el contenido.",
-        en:
-          "Web page for a company. Static web page for a company, with sections where admin can modify the content accessing to an admin panel using a key.",
-      },
-      name: "Consultora RAR",
-      preview: consultoraRarPvw,
-      repos: ["Private"],
       techs: [ReactLogo, FirebaseLogo],
     },
     {
