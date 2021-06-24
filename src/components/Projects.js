@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Title from "./Title";
 import { projectsData } from "../data/webData";
 import ProjectDetail from "./ProjectDetail";
+import { LARGE_RESPONSIVE_BREAK } from "../utils/constants";
 
 export default function Projects({ lang, setProjectsRef }) {
   const { title, projects } = projectsData;
@@ -26,16 +27,23 @@ export default function Projects({ lang, setProjectsRef }) {
   );
 }
 
-const Container = styled.section({
-  alignItems: "center",
-  display: "flex",
-  flexDirection: "column",
-  marginBottom: "140px",
-  padding: "20px",
-});
-const ProjectsWrapper = styled.section({
-  alignItems: "center",
-  display: "flex",
-  justifyContent: "space-evenly",
-  flexWrap: "wrap",
-});
+const Container = styled.section`
+  > h2 {
+    margin-bottom: 70px;
+  }
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 180px;
+  padding: 20px;
+  width: 950px;
+  @media (max-width: ${LARGE_RESPONSIVE_BREAK}) {
+    width: 100%;
+  }
+`;
+const ProjectsWrapper = styled.div`
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+`;

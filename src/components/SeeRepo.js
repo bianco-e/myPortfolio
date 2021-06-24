@@ -8,7 +8,7 @@ export default function SeeRepo({ repo }) {
     <>
       {repo !== "Private" ? (
         <RepoLink href={repo} target="blank">
-          <GitHubSVG />
+          <GitHubSVG height={30} width={30} />
         </RepoLink>
       ) : (
         <LockSvg />
@@ -17,5 +17,5 @@ export default function SeeRepo({ repo }) {
   );
 }
 const RepoLink = styled.a({
-  marginTop: "4px",
+  margin: "6px 0 3px 0",
 });

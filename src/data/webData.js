@@ -97,12 +97,11 @@ export const projectsData = {
   },
   projects: [
     {
-      deploy: "https://animalcardom.vercel.app?utm_source=portfolio&utm_medium=projects",
+      deploy:
+        "https://animalcardom.vercel.app?utm_source=portfolio&utm_medium=projects",
       description: {
-        es:
-          "Juego de cartas PvPC. Cada jugador recibe 5 animales y 3 plantas para aplicar a los animales. Al empezar toca un terreno aleatorio que puede beneficiar a ciertos animales. Cada animal tiene una habilidad, ataque y vida, y el objetivo es matar todas las cartas del oponente.",
-        en:
-          "Card game PvPC. Each player gets five different animals cards, and three different plants to apply on them if wanted. Also a terrain will be randomly set at the very start. Each card has an ability, attack and life points. The objective is to kill all opponent's cards.",
+        es: "Juego de cartas PvPC. Cada jugador recibe 5 animales y 3 plantas para aplicar a los animales. Al empezar toca un terreno aleatorio que puede beneficiar a ciertos animales. Cada animal tiene una habilidad, ataque y vida, y el objetivo es matar todas las cartas del oponente.",
+        en: "Card game PvPC. Each player gets five different animals cards, and three different plants to apply on them if wanted. Also a terrain will be randomly set at the very start. Each card has an ability, attack and life points. The objective is to kill all opponent's cards.",
       },
       name: "Animal Cardom",
       preview: animalCardomPvw,
@@ -115,10 +114,8 @@ export const projectsData = {
     {
       deploy: "https://onlineshopping.vercel.app/",
       description: {
-        es:
-          "Página de tienda online, donde el cliente puede diseñar estilos y administrar sus productos y categorías desde el panel de administrador",
-        en:
-          "E-commerce website, where client can set the page style, text and personal data, and also manage their products and categories from admin panel",
+        es: "Página de tienda online, donde el cliente puede diseñar estilos y administrar sus productos y categorías desde el panel de administrador",
+        en: "E-commerce website, where client can set the page style, text and personal data, and also manage their products and categories from admin panel",
       },
       name: "Online Store",
       preview: onlineShoppingPvw,
@@ -128,10 +125,8 @@ export const projectsData = {
     {
       deploy: "https://petfinder-arg.vercel.app/",
       description: {
-        es:
-          "Petfinder es una aplicación web donde podes publicar los datos de tu mascota perdida, o si encontraste una podes encontrar a la persona que la perdió",
-        en:
-          "Petfinder is a web app where you can post your pet details in case it is lost or if you found one you can contact the person who lost it.",
+        es: "Petfinder es una aplicación web donde podes publicar los datos de tu mascota perdida, o si encontraste una podes encontrar a la persona que la perdió",
+        en: "Petfinder is a web app where you can post your pet details in case it is lost or if you found one you can contact the person who lost it.",
       },
       name: "Petfinder",
       preview: petfinderPvw,
@@ -141,10 +136,8 @@ export const projectsData = {
     {
       deploy: "https://helpsocialapp.vercel.app/",
       description: {
-        es:
-          "Red social de ayuda. Los usuarios pueden subir cosas que necesiten o que pueden donar para alguien más. Especialmente objetos que respondan a una necesidad de cuidado de la salud.",
-        en:
-          "Help Social App. People can upload many things that they are looking for, or things they can donate and can be useful for someone else. Specially elements related to health care.",
+        es: "Red social de ayuda. Los usuarios pueden subir cosas que necesiten o que pueden donar para alguien más. Especialmente objetos que respondan a una necesidad de cuidado de la salud.",
+        en: "Help Social App. People can upload many things that they are looking for, or things they can donate and can be useful for someone else. Specially elements related to health care.",
       },
       name: "NecesiDar",
       preview: helpSocialAppPvw,
@@ -154,10 +147,8 @@ export const projectsData = {
     {
       deploy: "https://biancoemiliozzi.vercel.app/",
       description: {
-        es:
-          "Portfolio de presentación. Portfolio para presentar proyectos web desarrollados. ¿Querés saber qué es recursividad? ¡Hacé click en el nombre!",
-        en:
-          "Introduction portfolio. Portfolio to show someone else my developed web projects. Do you want to see what recursion is? Click on its name!",
+        es: "Portfolio de presentación. Portfolio para presentar proyectos web desarrollados. ¿Querés saber qué es recursividad? ¡Hacé click en el nombre!",
+        en: "Introduction portfolio. Portfolio to show someone else my developed web projects. Do you want to see what recursion is? Click on the name!",
       },
       name: "Portfolio",
       preview: portfolioPvw,

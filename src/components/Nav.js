@@ -56,6 +56,7 @@ const Header = styled.header({
   position: "sticky",
   top: "0",
   width: "100%",
+  zIndex: "100",
 });
 const Link = styled.a({
   color: "white",
